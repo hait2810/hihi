@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            height: 500px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <img id="hjx" src="./273730420_656992568974364_5360546464136077657_n.jpg" alt="">
+       
+    </div>
+    
+    <button>Bấm vào đây</button>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+                $('img').hide();
+                $("button").css('background','blue')
+                $("button").css('padding','10px')
+                $('button').click(function(){
+                    $('#hjx').show(5000);
+                })
+        })
+    </script>
+</body>
+</html>

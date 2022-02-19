@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <h1 id="kkaa">Thực hành sử dụng jquery</h1>
+
+   <button>Nút bấm</button>
+   <p class="p1">Đoạn văn 1</p>
+   <p class="p2">Đoạn văn 2</p>
+   <p class="p3">Đoạn văn 3</p>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // các lệnh
+            // đổi màu thẻ h1
+            $('#kkaa').css('color','red')
+            // bấm nút ẩn hoặc hịeen thẻ h1
+           
+            $('button').click(function() {
+                $('h1').css('background','yellow'); 
+                $(this).css('background','green') // chọn phần tử hiện tại
+                $('.p1, .p2, .p3').css('border','1px solid red')
+                $('h1').toggle(2000);
+           //     $('h1').hide(); // bấm nút ẩn đi
+            //     $('h1').show(); // bấm nút ẩn đi
+            $('p:contains(2)').css('background','cyan')
+                
+            })
+        })
+    </script>
+</body>
+</html>
